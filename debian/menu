@@ -1,0 +1,2 @@
+?package(flake):needs="text" section="Applications/Sound"\
+  title="flake" command="/usr/bin/flake"

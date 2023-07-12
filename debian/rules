@@ -1,4 +1,14 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@
+	dh $@ --no-parallel
+
+override_dh_auto_configure:
+	CFLAGS="$(CFLAGS) $(CPPFLAGS)" LDFLAGS="$(LDFLAGS)" ./configure --cpu=$(DEB_HOST_ARCH) --disable-strip --prefix=/usr
+
+override_dh_auto_install:
+	DESTDIR=$(CURDIR)/debian/flake $(MAKE) install-progs
+	DESTDIR=$(CURDIR)/debian/libflake-dev $(MAKE) install-libs install-headers
+
+override_dh_installchangelogs:
+	dh_installchangelogs Changelog
