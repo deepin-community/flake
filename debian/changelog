@@ -1,5 +1,97 @@
-template-repository (1.0-1) unstable; urgency=medium
+flake (0.11-4) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Ondřej Nový ]
+  * Remove Joost Yervante Damad from uploader list (Closes: #868833)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/control: Remove trailing whitespaces
+
+  [ Felipe Sateler ]
+  * Change maintainer address to debian-multimedia@lists.debian.org
+
+  [ Ondřej Nový ]
+  * d/watch: Use https protocol
+  * Use debhelper-compat instead of debian/compat
+
+  [ Sebastian Ramacher ]
+  * debian/control:
+    - Bump Standards-Version
+    - Bump debhelper compat to 12
+    - Set RRR: no
+  * debian/rules: Merge make invocations
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 06 Oct 2019 20:20:07 +0200
+
+flake (0.11-3) unstable; urgency=medium
+
+  * Team upload.
+  * debian/{rules,control,compat}: Bump compat to 10.
+  * debian/control:
+    - Change priority to optional.
+    - Bump Standards-Version.
+    - Update Vcs-*.
+    - Remove unnecessary shlibs:Depends.
+  * debian/rules: Handle all *FLAGS and pass correct cpu.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 05 Mar 2017 13:42:48 +0100
+
+flake (0.11-2) unstable; urgency=low
+
+  * Update my email address.
+  * debian/patches/1001-buffer_overrun.patch:
+    - libflake/lpc.c: Pass max_order instead of max_order+1 to
+      compute_lpc_coefs(). This avoids a buffer overrun in the
+      autoc[] array.
+
+ -- Alessio Treglia <alessio@debian.org>  Fri, 19 Nov 2010 12:57:42 +0100
+
+flake (0.11-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to dpkg-source 3.0 (quilt) format.
+  * Switch to debhelper 7.
+  * Update and fix debian/watch.
+  * debian/control:
+    - Change Maintainer to Debian Multimedia Maintainers.
+    - Add myself to Uploaders.
+    - Allow uploads by debian maintainers.
+    - Bump Standards up to 3.8.3.
+    - Move project's URL to the Homepage field value.
+    - Add Vcs-* fields.
+    - Move libflake-dev into libdevel section.
+  * debian/copyright:
+    - Replace (c) with © to fix copyright-with-old-dh-make-debian-copyright
+      lintian warning.
+    - Point to the correct GPL license file; fix
+      copyright-refers-to-symlink-license lintian warning.
+  * debian/menu:
+    - Fix menu-item-uses-apps-section lintian warning.
+  * libflake/md5.c: Drop changes, adopted upstream.
+  * Remove useless debian/dirs.
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Mon, 04 Jan 2010 10:53:57 +0100
+
+flake (0.10-3) unstable; urgency=low
+
+  * Pass --disable-strip to configure script (Closes: #436849)
+
+ -- Thomas Perl <thp@perli.net>  Fri, 21 Sep 2007 17:51:02 +0200
+
+flake (0.10-2) unstable; urgency=low
+
+  * hopefully fix FTBFS (Closes: #434117)
+
+ -- Joost Yervante Damad <andete@debian.org>  Mon, 03 Sep 2007 19:55:07 +0200
+
+flake (0.10-1) unstable; urgency=low
+
+  [ Thomas Perl ]
+  * Initial release (Closes: #425255)
+
+  [ Free Ekanayaka ]
+  * Set Debian Multimedia Team as maintaner
+  * Added thomas and myself  to uploaders
+  * Added watch filex
+
+ -- Free Ekanayaka <freee@debian.org>  Fri,  8 Jun 2007 21:53:15 +0200

@@ -1,22 +1,72 @@
-Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: template-repository
-Source: https://github.com/deepin-community/template-repository
+This package was debianized by Thomas Perl <thp@perli.net> on
+Sun, 20 May 2007 13:43:32 +0200.
 
-Files: *
-Copyright: 2023 Tsic404 <liuheng@deepin.org>
-License: GPL-2+
- This package is free software; you can redistribute it and/or modify
- it under the terms of the GNU General Public License as published by
- the Free Software Foundation; either version 2 of the License, or
- (at your option) any later version.
- .
- This package is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY; without even the implied warranty of
- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- GNU General Public License for more details.
- .
- You should have received a copy of the GNU General Public License
- along with this program. If not, see <https://www.gnu.org/licenses/>
- .
- On Debian systems, the complete text of the GNU General
- Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
+It was downloaded from <http://flake-enc.sourceforge.net/>
+
+Upstream Author: 
+
+    Justin Ruggles <justin.ruggles@gmail.com>
+
+Copyright: 
+
+    Copyright © 2006 Justin Ruggles
+
+License:
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+  
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+  
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+
+The Debian packaging is © 2007, Thomas Perl <thp@perli.net> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL-2'.
+
+------
+
+Copyright for libflake/bitio.c, libflake/bitio.h:
+
+    Bitwise File Writer
+    Copyright © 2006 Justin Ruggles
+    
+    derived from ffmpeg/libavcodec/bitstream.h
+    Common bit i/o utils
+    Copyright © 2000, 2001 Fabrice Bellard
+    Copyright © 2002-2004 Michael Niedermayer
+
+    This library is free software; you can redistribute it and/or
+    modify it under the terms of the GNU Lesser General Public
+    License as published by the Free Software Foundation; either
+    version 2 of the License, or (at your option) any later version.
+  
+    This library is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+    Lesser General Public License for more details.
+  
+    You should have received a copy of the GNU Lesser General Public
+    License along with this library; if not, write to the Free Software
+    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
+
+
+Copyright for libflake/md5.c, libflake/md5.h:
+
+    This is an implementation of the RSA Data Security, Inc.
+    MD5 Message-Digest Algorithm.
+  
+    Written by Solar Designer <solar at openwall.com> in 2001, and placed
+    in the public domain.  There's absolutely no warranty.
+  
+    Modified in 2006 by Justin Ruggles.
+    Still in the public domain.  Still no warranty.
+
+
